@@ -21,7 +21,7 @@ jobs:
 
     steps:
     - name: directory creation
-      run: mkdir _site/
+      run: mkdir ./_site/
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v5
