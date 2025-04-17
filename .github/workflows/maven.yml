@@ -34,7 +34,7 @@ jobs:
     - name: directory creation
       run: mkdir ./_site/
     - name: Build with Maven
-      run: mvn -B package --file pom.xml -DoutputDirectory=./_site
+      run: mvn clean site site:stage scm-publish:publish-scm
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
