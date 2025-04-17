@@ -31,7 +31,7 @@
          <configuration>
            <scmBranch>gh_pages</scmBranch>
          </configuration>
-    </plugin> --> -->
+    </plugin> -->
          
     <dependencies>
         <dependency>
