@@ -35,7 +35,9 @@ jobs:
       run: mkdir ./_site/
     - name: Build with Maven
       # run: mvn clean site site:stage scm-publish:publish-scm
-      run: mvn clean site
+      run: mvn clean verify
+    - name: copy
+      run: cp -r ./target/ ./_site/
     - name: deploy
       run: mvn deploy
     - name: Upload artifact
