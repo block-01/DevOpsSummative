@@ -38,8 +38,8 @@ jobs:
       run: mvn clean verify
     - name: copy
       run: cp -r ./target/ ./_site/
-    - name: deploy
-      run: mvn deploy
+    # - name: deploy
+    #   run: mvn deploy
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
